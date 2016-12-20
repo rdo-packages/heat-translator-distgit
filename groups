@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-4e4165c05aaab12fa574aafde034fb1eb923e395	openstack/heat-translator-distgit-ptl
+# UUID          Group Name
+False 	Non-Interactive Users
+6b6a26a63e000fabc16bfb4351598161c6af69d7       	openstack/heat-translator-distgit-core
+4e4165c05aaab12fa574aafde034fb1eb923e395        	openstack/heat-translator-distgit-ptl
+global:Registered-Users		Registered Users
