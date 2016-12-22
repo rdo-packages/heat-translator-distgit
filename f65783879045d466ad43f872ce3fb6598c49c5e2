@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "fab399f4_8e5d8bec",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 7
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2016-12-22T15:44:33Z",
+      "side": 1,
+      "message": "This needs out",
+      "range": {
+        "startLine": 83,
+        "startChar": 0,
+        "endLine": 84,
+        "endChar": 62
+      },
+      "revId": "f65783879045d466ad43f872ce3fb6598c49c5e2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fab399f4_ce47831c",
         "filename": "python-heat-translator.spec",
         "patchSetId": 7
@@ -13,6 +36,29 @@
       "writtenOn": "2016-12-22T15:43:40Z",
       "side": 1,
       "message": "Since there are no locales, we should remove this line.",
+      "range": {
+        "startLine": 147,
+        "startChar": 0,
+        "endLine": 148,
+        "endChar": 31
+      },
+      "revId": "f65783879045d466ad43f872ce3fb6598c49c5e2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab399f4_6e5837fb",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 7
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2016-12-22T15:44:33Z",
+      "side": 1,
+      "message": "This needs out",
       "range": {
         "startLine": 147,
         "startChar": 0,
