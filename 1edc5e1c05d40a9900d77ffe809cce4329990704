@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fab399f4_ee0287b3",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2016-12-22T15:50:21Z",
+      "side": 1,
+      "message": "You forgot to comment this out too",
+      "range": {
+        "startLine": 148,
+        "startChar": 0,
+        "endLine": 148,
+        "endChar": 31
+      },
+      "revId": "1edc5e1c05d40a9900d77ffe809cce4329990704",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
