@@ -1,0 +1,147 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fab399f4_ee1fe7b5",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 15
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2016-12-22T17:28:20Z",
+      "side": 1,
+      "message": "I see several other requirements in https://github.com/openstack/heat-translator/blob/master/requirements.txt, aren\u0027t they needed?",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 41
+      },
+      "revId": "a9879097dddf8a89538f6a16d8074451c6a33b48",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab399f4_0e1dfbbd",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 15
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2016-12-22T17:28:20Z",
+      "side": 1,
+      "message": "test-requirements from the project should be requirements for the package, otherwise we won\u0027t be able to run the tests when the -tests package is installed.",
+      "revId": "a9879097dddf8a89538f6a16d8074451c6a33b48",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab399f4_2e79dffc",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 15
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2016-12-22T17:28:20Z",
+      "side": 1,
+      "message": "We can remove this. Since it\u0027s a build requirement already for the python2 subpackage, it will be installed anyway.",
+      "range": {
+        "startLine": 70,
+        "startChar": 0,
+        "endLine": 70,
+        "endChar": 19
+      },
+      "revId": "a9879097dddf8a89538f6a16d8074451c6a33b48",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab399f4_4e7e13e6",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 15
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2016-12-22T17:28:20Z",
+      "side": 1,
+      "message": "Missing requirements?",
+      "revId": "a9879097dddf8a89538f6a16d8074451c6a33b48",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab399f4_6e83d7cc",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 15
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2016-12-22T17:28:20Z",
+      "side": 1,
+      "message": "Same as the python2-%{library}-tests subpackage.",
+      "revId": "a9879097dddf8a89538f6a16d8074451c6a33b48",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab399f4_8e882be9",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 15
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2016-12-22T17:28:20Z",
+      "side": 1,
+      "message": "There is no default_python macro defined in this spec. Maybe this was taken from another example?\n\nI\u0027d recommend to keep the python2 executable as default for now.\n\nIn general, we use a different approach to providing binaries for python2 and python3, use https://github.com/rdo-packages/neutronclient-distgit/blob/rpm-master/python-neutronclient.spec#L108-L120 as an example.\n\n(mental note: fix this in the openstack-example-spec repo)",
+      "range": {
+        "startLine": 116,
+        "startChar": 8,
+        "endLine": 116,
+        "endChar": 22
+      },
+      "revId": "a9879097dddf8a89538f6a16d8074451c6a33b48",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab399f4_ee760706",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 15
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2016-12-22T17:28:20Z",
+      "side": 1,
+      "message": "No tests are currently being run (search for %check in https://review.rdoproject.org/jenkins/job/DLRN-rpmbuild/6022/consoleFull) because the project\u0027s test-requirements are not included as BuildRequires:. We should fix that.",
+      "range": {
+        "startLine": 123,
+        "startChar": 0,
+        "endLine": 128,
+        "endChar": 26
+      },
+      "revId": "a9879097dddf8a89538f6a16d8074451c6a33b48",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
