@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "fab399f4_c9d77dbe",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 22
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2016-12-24T02:31:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fab399f4_0917b5ee",
+      "range": {
+        "startLine": 39,
+        "startChar": 15,
+        "endLine": 39,
+        "endChar": 35
+      },
+      "revId": "5c484f29cafea598a609e4b0e067ed1273e02199",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fab399f4_29d39939",
         "filename": "python-heat-translator.spec",
         "patchSetId": 22
@@ -36,6 +60,30 @@
       "writtenOn": "2016-12-23T10:10:12Z",
       "side": 1,
       "message": "Same as above",
+      "range": {
+        "startLine": 45,
+        "startChar": 19,
+        "endLine": 45,
+        "endChar": 36
+      },
+      "revId": "5c484f29cafea598a609e4b0e067ed1273e02199",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab399f4_e9e441ae",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 22
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2016-12-24T02:31:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fab399f4_29d39939",
       "range": {
         "startLine": 45,
         "startChar": 19,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "fab399f4_09e2559f",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 22
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2016-12-24T02:31:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fab399f4_49d8cd53",
+      "range": {
+        "startLine": 53,
+        "startChar": 9,
+        "endLine": 53,
+        "endChar": 32
+      },
+      "revId": "5c484f29cafea598a609e4b0e067ed1273e02199",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fab399f4_69dd9142",
         "filename": "python-heat-translator.spec",
         "patchSetId": 22
@@ -82,6 +154,30 @@
       "writtenOn": "2016-12-23T10:10:12Z",
       "side": 1,
       "message": "Also here",
+      "range": {
+        "startLine": 73,
+        "startChar": 12,
+        "endLine": 73,
+        "endChar": 31
+      },
+      "revId": "5c484f29cafea598a609e4b0e067ed1273e02199",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab399f4_29ee398c",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 22
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2016-12-24T02:31:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fab399f4_69dd9142",
       "range": {
         "startLine": 73,
         "startChar": 12,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "fab399f4_49f36d73",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 22
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2016-12-24T02:31:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fab399f4_89e2e501",
+      "range": {
+        "startLine": 79,
+        "startChar": 11,
+        "endLine": 79,
+        "endChar": 32
+      },
+      "revId": "5c484f29cafea598a609e4b0e067ed1273e02199",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fab399f4_c91cdd16",
         "filename": "python-heat-translator.spec",
         "patchSetId": 22
@@ -140,6 +260,30 @@
     },
     {
       "key": {
+        "uuid": "fab399f4_69e8317d",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 22
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2016-12-24T02:31:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fab399f4_c91cdd16",
+      "range": {
+        "startLine": 106,
+        "startChar": 0,
+        "endLine": 117,
+        "endChar": 27
+      },
+      "revId": "5c484f29cafea598a609e4b0e067ed1273e02199",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fab399f4_e919a123",
         "filename": "python-heat-translator.spec",
         "patchSetId": 22
@@ -151,6 +295,30 @@
       "writtenOn": "2016-12-23T10:10:12Z",
       "side": 1,
       "message": "python3-*",
+      "range": {
+        "startLine": 122,
+        "startChar": 0,
+        "endLine": 131,
+        "endChar": 28
+      },
+      "revId": "5c484f29cafea598a609e4b0e067ed1273e02199",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab399f4_89ed858e",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 22
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2016-12-24T02:31:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fab399f4_e919a123",
       "range": {
         "startLine": 122,
         "startChar": 0,
