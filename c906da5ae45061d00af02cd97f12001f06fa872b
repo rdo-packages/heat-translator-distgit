@@ -16,6 +16,24 @@
       "revId": "c906da5ae45061d00af02cd97f12001f06fa872b",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dab895d6_5ff3230a",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 32
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2017-01-06T23:53:59Z",
+      "side": 1,
+      "message": "Yea there were a few misconfigured requires. I think they are unrelated to the check tests not passing.",
+      "parentUuid": "dab895d6_bf3d1fbe",
+      "revId": "c906da5ae45061d00af02cd97f12001f06fa872b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
