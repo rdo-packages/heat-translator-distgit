@@ -16,6 +16,24 @@
       "revId": "83ab4fc4b799427d89e412c6f7080c5e2d702399",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dab895d6_ffa6b752",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 33
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2017-01-09T16:01:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dab895d6_bfd7dfbe",
+      "revId": "83ab4fc4b799427d89e412c6f7080c5e2d702399",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
