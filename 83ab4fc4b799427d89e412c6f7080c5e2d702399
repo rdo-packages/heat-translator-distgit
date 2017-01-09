@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dab895d6_bfd7dfbe",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 33
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-01-09T15:35:31Z",
+      "side": 1,
+      "message": "Instead of commenting out, add || : to keep unittests running non-fatally, and work with upstream to redesign unittests which are not _unit_ testing i.e. testing with sockets should be mocked.",
+      "revId": "83ab4fc4b799427d89e412c6f7080c5e2d702399",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
