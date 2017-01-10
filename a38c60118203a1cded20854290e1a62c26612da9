@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dab895d6_cd85c9ae",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 221,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-01-10T21:09:16Z",
+      "side": 1,
+      "message": "Actually, it should be %{executable}, just like in the python2 subpackage.",
+      "range": {
+        "startLine": 220,
+        "startChar": 5,
+        "endLine": 221,
+        "endChar": 25
+      },
+      "revId": "a38c60118203a1cded20854290e1a62c26612da9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
