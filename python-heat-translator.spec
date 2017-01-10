@@ -217,8 +217,8 @@ rm -rf .testrepository
 %{python3_sitelib}/%{module}
 %{python3_sitelib}/heat_%{module}-*.egg-info
 %exclude %{python3_sitelib}/%{module}/tests
-%{_bindir}/neutron-3
-%{_bindir}/neutron-%{python3_version}
+%{_bindir}/%{library}-3
+%{_bindir}/%{library}%{python3_version}
 
 %files -n python3-%{library}-tests
 %license LICENSE
