@@ -16,6 +16,24 @@
       "revId": "6d63eaa6c91f236ebf9daf4c5303a235735c6615",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dab895d6_ad6c1538",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-01-10T18:39:11Z",
+      "side": 1,
+      "message": "Ok, let\u0027s fix everything in the same commit.",
+      "parentUuid": "dab895d6_6d83ddcc",
+      "revId": "6d63eaa6c91f236ebf9daf4c5303a235735c6615",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
