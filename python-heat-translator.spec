@@ -210,7 +210,7 @@ rm -rf .testrepository
 %doc doc/build/html README.rst
 
 %if 0%{?with_python3}
-%files python3-%{library}
+%files -n python3-%{library}
 %license LICENSE
 %{python3_sitelib}/%{module}
 %{python3_sitelib}/heat_%{module}-*.egg-info
