@@ -118,6 +118,12 @@ Requires:   python3-python-heatclient
 Requires:   python3-python-glanceclient
 Requires:   python3-requests
 
+%description -n python3-%{library}
+OpenStack Heat Translator
+Heat-Translator is an Openstack command line tool which takes non-Heat
+templates as an input and produces a Heat Orchestration Template (HOT) which
+can be deployed by Heat.
+
 %package -n python3-%{library}-tests
 Summary:    OpenStack Heat Translator tests
 Requires:   python3-%{library} = %{version}-%{release}
@@ -210,7 +216,7 @@ rm -rf .testrepository
 %doc doc/build/html README.rst
 
 %if 0%{?with_python3}
-%files python3-%{library}
+%files -n python3-%{library}
 %license LICENSE
 %{python3_sitelib}/%{module}
 %{python3_sitelib}/heat_%{module}-*.egg-info
