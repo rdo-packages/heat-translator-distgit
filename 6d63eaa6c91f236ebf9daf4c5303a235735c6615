@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dab895d6_6d83ddcc",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2017-01-10T18:34:08Z",
+      "side": 1,
+      "message": "There is also an upstream change that got merged makes these two sed line duplicates in the setup.cfg file I don\u0027t know how detrimental duplicates in this file are.\n\nhttps://review.openstack.org/#/c/418017/\n\nHappy to put in a different commit, to take them out. Just noting it here in case it bites.",
+      "revId": "6d63eaa6c91f236ebf9daf4c5303a235735c6615",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
