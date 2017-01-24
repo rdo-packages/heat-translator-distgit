@@ -226,5 +226,3 @@ rm -rf .testrepository
 %endif # with_python3
 
 %changelog
-* Mon Dec 19 2016 Dan Radez <dradez@redhat.com> - 0.6.1.dev35-1
-- Initial Packaging
