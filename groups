@@ -1,5 +1,9 @@
-# UUID                                  	Group Name
-#
-4e4165c05aaab12fa574aafde034fb1eb923e395	openstack/heat-translator-distgit-ptl
-6b6a26a63e000fabc16bfb4351598161c6af69d7	openstack/heat-translator-distgit-core
-global:Registered-Users                 	Registered Users
+# UUID Group Name
+global:Registered-Users	Registered Users
+4572c517702492251ad622a289176552a8acbbb2	rdo-superusers
+global:Anonymous-Users	Anonymous Users
+05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
+401cf37bee35d1c809d4d957e55f2a304f8eed69	rdo-provenpackagers
+f425612a5cc95e5fecb9c7c9e99cf5eb62c35633	openstack/heat-translator-core
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Non-Interactive Users
+c97cf143b4c8923993d5d4f495745cdbe1d12725	openstack/heat-translator-ptl
