@@ -53,10 +53,10 @@ Requires:   PyYAML
 Requires:   python-dateutil
 Requires:   python-six
 Requires:   python-tosca-parser
-Requires:   python-keystoneauth1
-Requires:   python-novaclient
-Requires:   python-heatclient
-Requires:   python-glanceclient
+Requires:   python-keystoneauth1 >= 3.1.0
+Requires:   python-novaclient >= 1:9.0.0
+Requires:   python-heatclient >= 1.6.1
+Requires:   python-glanceclient >= 1:2.8.0
 Requires:   python-requests
 
 %description -n python2-%{library}
@@ -112,10 +112,10 @@ Requires:   python3-PyYAML
 Requires:   python3-python-dateutil
 Requires:   python3-six
 Requires:   python3-tosca-parser
-Requires:   python3-keystoneauth1
-Requires:   python3-python-novaclient
-Requires:   python3-python-heatclient
-Requires:   python3-python-glanceclient
+Requires:   python3-keystoneauth1 >= 3.1.0
+Requires:   python3-python-novaclient >= 1:9.0.0
+Requires:   python3-python-heatclient >= 1.6.1
+Requires:   python3-python-glanceclient >= 1:2.8.0
 Requires:   python3-requests
 
 %description -n python3-%{library}
