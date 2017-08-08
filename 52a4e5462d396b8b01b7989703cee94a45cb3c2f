@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a890539_79b492f2",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-08-08T13:18:10Z",
+      "side": 1,
+      "message": "novaclient has epoch\u003d1",
+      "revId": "52a4e5462d396b8b01b7989703cee94a45cb3c2f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a890539_f9c7a262",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-08-08T13:18:10Z",
+      "side": 1,
+      "message": "glanceclient has epoch\u003d1",
+      "revId": "52a4e5462d396b8b01b7989703cee94a45cb3c2f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
