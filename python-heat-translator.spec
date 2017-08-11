@@ -33,7 +33,6 @@ BuildRequires:  git
 
 # Test Requirements
 BuildRequires:  python-hacking
-BuildRequires:  python-coverage
 BuildRequires:  python-fixtures
 BuildRequires:  python-oslotest
 BuildRequires:  python-oslo-sphinx
@@ -69,7 +68,6 @@ can be deployed by Heat.
 Summary:    OpenStack example library tests
 Requires:   python2-%{library} = %{version}-%{release}
 Requires:   python-hacking
-Requires:   python-coverage
 Requires:   python-fixtures
 Requires:   python-oslotest
 Requires:   python-oslo-sphinx
@@ -128,7 +126,6 @@ can be deployed by Heat.
 Summary:    OpenStack Heat Translator tests
 Requires:   python3-%{library} = %{version}-%{release}
 Requires:   python3-hacking
-Requires:   python3-coverage
 Requires:   python3-fixtures
 Requires:   python3-oslotest
 Requires:   python3-oslosphinx
