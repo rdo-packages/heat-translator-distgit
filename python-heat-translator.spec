@@ -107,13 +107,13 @@ Requires:   python3-pbr
 Requires:   python3-babel
 Requires:   python3-cliff
 Requires:   python3-PyYAML
-Requires:   python3-python-dateutil
+Requires:   python3-dateutil
 Requires:   python3-six
 Requires:   python3-tosca-parser
 Requires:   python3-keystoneauth1 >= 3.1.0
-Requires:   python3-python-novaclient >= 1:9.0.0
-Requires:   python3-python-heatclient >= 1.6.1
-Requires:   python3-python-glanceclient >= 1:2.8.0
+Requires:   python3-novaclient >= 1:9.0.0
+Requires:   python3-heatclient >= 1.6.1
+Requires:   python3-glanceclient >= 1:2.8.0
 Requires:   python3-requests
 
 %description -n python3-%{library}
@@ -128,8 +128,8 @@ Requires:   python3-%{library} = %{version}-%{release}
 Requires:   python3-hacking
 Requires:   python3-fixtures
 Requires:   python3-oslotest
-Requires:   python3-oslosphinx
-Requires:   python3-python-subunit
+Requires:   python3-oslo-sphinx
+Requires:   python3-subunit
 Requires:   python3-sphinx
 Requires:   python3-testrepository
 Requires:   python3-testscenarios
@@ -171,7 +171,7 @@ rm -rf html/.{doctrees,buildinfo}
 %install
 %if 0%{?with_python3}
 %py3_install
-mv %{buildroot}%{_bindir}/%{executable} %{buildroot}%{_bindir}/%{executable}%{python3_version}
+mv %{buildroot}%{_bindir}/%{executable} %{buildroot}%{_bindir}/%{executable}-%{python3_version}
 ln -s ./%{executable}-%{python3_version} %{buildroot}%{_bindir}/%{executable}-3
 %endif
 
