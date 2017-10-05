@@ -11,6 +11,15 @@
 %global module translator
 %global executable heat-translator
 
+%global common_desc \
+OpenStack Heat Translator \
+Heat-Translator is an Openstack command line tool which takes non-Heat \
+templates as an input and produces a Heat Orchestration Template (HOT) which \
+can be deployed by Heat.
+
+%global common_desc_tests OpenStack Heat Translator
+
+
 Name:       python-%{library}
 Version:    XXX
 Release:    XXX
@@ -59,10 +68,7 @@ Requires:   python-glanceclient >= 1:2.8.0
 Requires:   python-requests
 
 %description -n python2-%{library}
-OpenStack Heat Translator
-Heat-Translator is an Openstack command line tool which takes non-Heat
-templates as an input and produces a Heat Orchestration Template (HOT) which
-can be deployed by Heat.
+%{common_desc}
 
 %package -n python2-%{library}-tests
 Summary:    OpenStack example library tests
@@ -79,7 +85,7 @@ Requires:   python-testtools
 Requires:   python-tosca-parser
 
 %description -n python2-%{library}-tests
-OpenStack Heat Translator
+%{common_desc_tests}
 
 This package contains the Heat Translator test files.
 
@@ -90,7 +96,7 @@ BuildRequires: python-sphinx
 BuildRequires: python-oslo-sphinx
 
 %description -n python-%{library}-doc
-OpenStack Heat Translator
+%{common_desc_tests}
 
 This package contains the documentation.
 
@@ -117,10 +123,7 @@ Requires:   python3-glanceclient >= 1:2.8.0
 Requires:   python3-requests
 
 %description -n python3-%{library}
-OpenStack Heat Translator
-Heat-Translator is an Openstack command line tool which takes non-Heat
-templates as an input and produces a Heat Orchestration Template (HOT) which
-can be deployed by Heat.
+%{common_desc}
 
 %package -n python3-%{library}-tests
 Summary:    OpenStack Heat Translator tests
@@ -137,7 +140,7 @@ Requires:   python3-testtools
 Requires:   python3-tosca-parser
 
 %description -n python3-%{library}-tests
-OpenStack Heat Translator
+%{common_desc_tests}
 
 This package contains the Heat Translator test files.
 
@@ -145,10 +148,7 @@ This package contains the Heat Translator test files.
 
 
 %description
-OpenStack Heat Translator
-Heat-Translator is an Openstack command line tool which takes non-Heat
-templates as an input and produces a Heat Orchestration Template (HOT) which
-can be deployed by Heat.
+%{common_desc}
 
 
 %prep
