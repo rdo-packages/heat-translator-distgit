@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aaa499b_8f1dda11",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-02-14T09:05:54Z",
+      "side": 1,
+      "message": "Missing epoch",
+      "range": {
+        "startLine": 67,
+        "startChar": 36,
+        "endLine": 67,
+        "endChar": 41
+      },
+      "revId": "d905c6a8c75ac33578323381ccd7992bc6ee679f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aaa499b_6f1a8e19",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-02-14T09:05:54Z",
+      "side": 1,
+      "message": "epoch",
+      "range": {
+        "startLine": 122,
+        "startChar": 36,
+        "endLine": 122,
+        "endChar": 41
+      },
+      "revId": "d905c6a8c75ac33578323381ccd7992bc6ee679f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
