@@ -36,36 +36,36 @@ Summary:    OpenStack Heat Translator
 %{?python_provide:%python_provide python2-%{library}}
 
 BuildRequires:  python2-devel
-BuildRequires:  python-pbr
-BuildRequires:  python-setuptools
+BuildRequires:  python2-pbr
+BuildRequires:  python2-setuptools
 BuildRequires:  git
 
 # Test Requirements
-BuildRequires:  python-hacking
-BuildRequires:  python-fixtures
-BuildRequires:  python-oslotest
-BuildRequires:  python-oslo-sphinx
-BuildRequires:  python-subunit
-BuildRequires:  python-sphinx
-BuildRequires:  python-requests
-BuildRequires:  python-testrepository
-BuildRequires:  python-testscenarios
-BuildRequires:  python-testtools
-BuildRequires:  python-tosca-parser
-BuildRequires:  python-cliff
+BuildRequires:  python2-hacking
+BuildRequires:  python2-fixtures
+BuildRequires:  python2-oslotest
+BuildRequires:  python2-oslo-sphinx
+BuildRequires:  python2-subunit
+BuildRequires:  python2-sphinx
+BuildRequires:  python2-requests
+BuildRequires:  python2-testrepository
+BuildRequires:  python2-testscenarios
+BuildRequires:  python2-testtools
+BuildRequires:  python2-tosca-parser
+BuildRequires:  python2-cliff
 
-Requires:   python-pbr
-Requires:   python-babel
-Requires:   python-cliff
+Requires:   python2-pbr
+Requires:   python2-babel
+Requires:   python2-cliff
 Requires:   PyYAML
-Requires:   python-dateutil
-Requires:   python-six
-Requires:   python-tosca-parser
-Requires:   python-keystoneauth1 >= 3.1.0
-Requires:   python-novaclient >= 1:9.0.0
-Requires:   python-heatclient >= 1.6.1
-Requires:   python-glanceclient >= 1:2.8.0
-Requires:   python-requests
+Requires:   python2-dateutil
+Requires:   python2-six
+Requires:   python2-tosca-parser
+Requires:   python2-keystoneauth1 >= 3.3.0
+Requires:   python2-novaclient >= 1:9.1.0
+Requires:   python2-heatclient >= 1.10.0
+Requires:   python2-glanceclient >= 1:2.8.0
+Requires:   python2-requests
 
 %description -n python2-%{library}
 %{common_desc}
@@ -73,16 +73,16 @@ Requires:   python-requests
 %package -n python2-%{library}-tests
 Summary:    OpenStack example library tests
 Requires:   python2-%{library} = %{version}-%{release}
-Requires:   python-hacking
-Requires:   python-fixtures
-Requires:   python-oslotest
-Requires:   python-oslo-sphinx
-Requires:   python-subunit
-Requires:   python-sphinx
-Requires:   python-testrepository
-Requires:   python-testscenarios
-Requires:   python-testtools
-Requires:   python-tosca-parser
+Requires:   python2-hacking
+Requires:   python2-fixtures
+Requires:   python2-oslotest
+Requires:   python2-oslo-sphinx
+Requires:   python2-subunit
+Requires:   python2-sphinx
+Requires:   python2-testrepository
+Requires:   python2-testscenarios
+Requires:   python2-testtools
+Requires:   python2-tosca-parser
 
 %description -n python2-%{library}-tests
 %{common_desc_tests}
@@ -92,8 +92,8 @@ This package contains the Heat Translator test files.
 %package -n python-%{library}-doc
 Summary:    OpenStack example library documentation
 
-BuildRequires: python-sphinx
-BuildRequires: python-oslo-sphinx
+BuildRequires: python2-sphinx
+BuildRequires: python2-oslo-sphinx
 
 %description -n python-%{library}-doc
 %{common_desc_tests}
@@ -116,9 +116,9 @@ Requires:   python3-PyYAML
 Requires:   python3-dateutil
 Requires:   python3-six
 Requires:   python3-tosca-parser
-Requires:   python3-keystoneauth1 >= 3.1.0
-Requires:   python3-novaclient >= 1:9.0.0
-Requires:   python3-heatclient >= 1.6.1
+Requires:   python3-keystoneauth1 >= 3.3.0
+Requires:   python3-novaclient >= 1:9.1.0
+Requires:   python3-heatclient >= 1.10.0
 Requires:   python3-glanceclient >= 1:2.8.0
 Requires:   python3-requests
 
