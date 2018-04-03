@@ -223,3 +223,4 @@ rm -rf .testrepository
 %endif # with_python3
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/heat-translator/commit/?id=3f08ea4dee48a3351df10f3cba380228d25a3e09
