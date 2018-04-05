@@ -44,9 +44,7 @@ BuildRequires:  git
 BuildRequires:  python2-hacking
 BuildRequires:  python2-fixtures
 BuildRequires:  python2-oslotest
-BuildRequires:  python2-oslo-sphinx
 BuildRequires:  python2-subunit
-BuildRequires:  python2-sphinx
 BuildRequires:  python2-requests
 BuildRequires:  python2-testrepository
 BuildRequires:  python2-testscenarios
@@ -76,9 +74,7 @@ Requires:   python2-%{library} = %{version}-%{release}
 Requires:   python2-hacking
 Requires:   python2-fixtures
 Requires:   python2-oslotest
-Requires:   python2-oslo-sphinx
 Requires:   python2-subunit
-Requires:   python2-sphinx
 Requires:   python2-testrepository
 Requires:   python2-testscenarios
 Requires:   python2-testtools
@@ -131,9 +127,7 @@ Requires:   python3-%{library} = %{version}-%{release}
 Requires:   python3-hacking
 Requires:   python3-fixtures
 Requires:   python3-oslotest
-Requires:   python3-oslo-sphinx
 Requires:   python3-subunit
-Requires:   python3-sphinx
 Requires:   python3-testrepository
 Requires:   python3-testscenarios
 Requires:   python3-testtools
