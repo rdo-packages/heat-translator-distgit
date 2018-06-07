@@ -89,7 +89,9 @@ This package contains the Heat Translator test files.
 Summary:    OpenStack example library documentation
 
 BuildRequires: python2-sphinx
+# FIXME(jpena): remove once a version including https://review.openstack.org/570889 is tagged
 BuildRequires: python2-oslo-sphinx
+BuildRequires: python2-openstackdocstheme
 
 %description -n python-%{library}-doc
 %{common_desc_tests}
@@ -158,9 +160,9 @@ rm -f *requirements.txt
 %endif
 
 # generate html docs
-%{__python2} setup.py build_sphinx
+sphinx-build -b html doc/source doc/build/html
 # remove the sphinx-build leftovers
-rm -rf html/.{doctrees,buildinfo}
+rm -rf doc/build/html/.{doctrees,buildinfo}
 
 %install
 %if 0%{?with_python3}
