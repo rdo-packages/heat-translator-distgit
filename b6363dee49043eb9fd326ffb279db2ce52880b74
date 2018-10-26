@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9abe1de1_ab3e0fd8",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2018-10-26T13:56:41Z",
+      "side": 1,
+      "message": "It\u0027s unrelated, but we could use the opportunity to remove oslo-sphinx as a requirement, version 1.1.0 does not require it (which is what we have for master and rocky)",
+      "range": {
+        "startLine": 108,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 41
+      },
+      "revId": "b6363dee49043eb9fd326ffb279db2ce52880b74",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
