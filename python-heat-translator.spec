@@ -59,6 +59,11 @@ BuildRequires:  python%{pyver}-testtools
 BuildRequires:  python%{pyver}-tosca-parser
 BuildRequires:  python%{pyver}-cliff
 
+# Handle python2 exception
+%if %{pyver} == 3
+BuildRequires:  /usr/bin/pathfix.py
+%endif
+
 Requires:   python%{pyver}-pbr
 Requires:   python%{pyver}-babel
 Requires:   python%{pyver}-cliff
@@ -130,6 +135,10 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 
 # Create a versioned binary for backwards compatibility until everything is pure py3
 ln -s ./%{executable} %{buildroot}%{_bindir}/%{executable}-%{pyver}
+
+%if %{pyver} == 3
+    pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{pyver_sitelib}/%{module}/tests/data/artifacts/
+%endif
 
 # Looks like Unit tests depend on sockets
 # need to mock out sockets upstream
