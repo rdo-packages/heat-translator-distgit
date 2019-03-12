@@ -75,6 +75,7 @@ Requires:   python%{pyver}-novaclient >= 1:9.1.0
 Requires:   python%{pyver}-heatclient >= 1.10.0
 Requires:   python%{pyver}-glanceclient >= 1:2.8.0
 Requires:   python%{pyver}-requests
+Requires:   python%{pyver}-oslo-log >= 3.36.0
 
 # Handle python2 exception
 %if %{pyver} == 2
