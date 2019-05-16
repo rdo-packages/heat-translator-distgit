@@ -12,7 +12,7 @@
 %global executable heat-translator
 
 Name:       python-%{library}
-Version:    0.9.0
+Version:    0.9.1
 Release:    1%{?dist}
 Summary:    OpenStack Heat Translator
 License:    ASL 2.0
@@ -226,6 +226,9 @@ rm -rf .testrepository
 %endif # with_python3
 
 %changelog
+* Thu May 16 2019 RDO <dev@lists.rdoproject.org> 0.9.1-1
+- Update to 0.9.1
+
 * Tue Aug 22 2017 Alfredo Moralejo <amoralej@redhat.com> 0.9.0-1
 - Update to 0.9.0
 
