@@ -25,7 +25,7 @@ can be deployed by Heat.
 
 
 Name:       python-%{library}
-Version:    1.3.0
+Version:    1.3.1
 Release:    1%{?dist}
 Summary:    OpenStack Heat Translator
 License:    ASL 2.0
@@ -165,6 +165,9 @@ export PYTHON=%{pyver_bin}
 %doc doc/build/html README.rst
 
 %changelog
+* Thu May 16 2019 RDO <dev@lists.rdoproject.org> 1.3.1-1
+- Update to 1.3.1
+
 * Wed Mar 13 2019 RDO <dev@lists.rdoproject.org> 1.3.0-1
 - Update to 1.3.0
 
