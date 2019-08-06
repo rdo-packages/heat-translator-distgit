@@ -14,6 +14,7 @@
 %global library heat-translator
 %global module translator
 %global executable heat-translator
+%global with_doc 1
 
 %global common_desc \
 OpenStack Heat Translator \
@@ -106,6 +107,7 @@ Requires:   python%{pyver}-tosca-parser
 
 This package contains the Heat Translator test files.
 
+%if 0%{?with_doc}
 %package -n python-%{library}-doc
 Summary:    OpenStack heat-translator library documentation
 
@@ -116,6 +118,7 @@ BuildRequires: python%{pyver}-openstackdocstheme
 %{common_desc_tests}
 
 This package contains the documentation.
+%endif
 
 %prep
 %autosetup -n %{library}-%{upstream_version} -S git
@@ -126,10 +129,12 @@ rm -f *requirements.txt
 %build
 %{pyver_build}
 
+%if 0%{?with_doc}
 # generate html docs
 sphinx-build-%{pyver} -b html doc/source doc/build/html
 # remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
+%endif
 
 %install
 %{pyver_install}
@@ -160,8 +165,10 @@ export PYTHON=%{pyver_bin}
 %license LICENSE
 %{pyver_sitelib}/%{module}/tests
 
+%if 0%{?with_doc}
 %files -n python-%{library}-doc
 %license LICENSE
 %doc doc/build/html README.rst
+%endif
 
 %changelog
