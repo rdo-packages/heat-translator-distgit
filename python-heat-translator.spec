@@ -1,14 +1,3 @@
-# Macros for py2/py3 compatibility
-%if 0%{?fedora} || 0%{?rhel} > 7
-%global pyver %{python3_pkgversion}
-%else
-%global pyver 2
-%endif
-%global pyver_bin python%{pyver}
-%global pyver_sitelib %python%{pyver}_sitelib
-%global pyver_install %py%{pyver}_install
-%global pyver_build %py%{pyver}_build
-# End of macros for py2/py3 compatibility
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 %global library heat-translator
@@ -39,70 +28,62 @@ BuildArch:  noarch
 %description
 %{common_desc}
 
-%package -n python%{pyver}-%{library}
+%package -n python3-%{library}
 Summary:    OpenStack Heat Translator
-%{?python_provide:%python_provide python%{pyver}-%{library}}
+%{?python_provide:%python_provide python3-%{library}}
 
-BuildRequires:  python%{pyver}-devel
-BuildRequires:  python%{pyver}-pbr
-BuildRequires:  python%{pyver}-setuptools
+BuildRequires:  python3-devel
+BuildRequires:  python3-pbr
+BuildRequires:  python3-setuptools
 BuildRequires:  git
 
 # Test Requirements
-BuildRequires:  python%{pyver}-hacking
-BuildRequires:  python%{pyver}-fixtures
-BuildRequires:  python%{pyver}-oslotest
-BuildRequires:  python%{pyver}-subunit
-BuildRequires:  python%{pyver}-requests
-BuildRequires:  python%{pyver}-testrepository
-BuildRequires:  python%{pyver}-testscenarios
-BuildRequires:  python%{pyver}-testtools
-BuildRequires:  python%{pyver}-tosca-parser
-BuildRequires:  python%{pyver}-cliff
+BuildRequires:  python3-hacking
+BuildRequires:  python3-fixtures
+BuildRequires:  python3-oslotest
+BuildRequires:  python3-subunit
+BuildRequires:  python3-requests
+BuildRequires:  python3-testrepository
+BuildRequires:  python3-testscenarios
+BuildRequires:  python3-testtools
+BuildRequires:  python3-tosca-parser
+BuildRequires:  python3-cliff
 
-# Handle python2 exception
-%if %{pyver} == 3
 BuildRequires:  /usr/bin/pathfix.py
-%endif
 
-Requires:   python%{pyver}-pbr
-Requires:   python%{pyver}-babel
-Requires:   python%{pyver}-cliff
-Requires:   python%{pyver}-dateutil
-Requires:   python%{pyver}-six
-Requires:   python%{pyver}-tosca-parser
-Requires:   python%{pyver}-keystoneauth1 >= 3.4.0
-Requires:   python%{pyver}-novaclient >= 1:9.1.0
-Requires:   python%{pyver}-heatclient >= 1.10.0
-Requires:   python%{pyver}-glanceclient >= 1:2.8.0
-Requires:   python%{pyver}-requests
-Requires:   python%{pyver}-oslo-log >= 3.36.0
+Requires:   python3-pbr
+Requires:   python3-babel
+Requires:   python3-cliff
+Requires:   python3-dateutil
+Requires:   python3-six
+Requires:   python3-tosca-parser
+Requires:   python3-keystoneauth1 >= 3.4.0
+Requires:   python3-novaclient >= 1:9.1.0
+Requires:   python3-heatclient >= 1.10.0
+Requires:   python3-glanceclient >= 1:2.8.0
+Requires:   python3-requests
+Requires:   python3-oslo-log >= 3.36.0
 
-# Handle python2 exception
-%if %{pyver} == 2
-Requires:   PyYAML
-%else
-Requires:   python%{pyver}-PyYAML
-%endif
+Requires:   python3-PyYAML
 
-%description -n python%{pyver}-%{library}
+%description -n python3-%{library}
 %{common_desc}
 
-%package -n python%{pyver}-%{library}-tests
+%package -n python3-%{library}-tests
 Summary:    OpenStack heat-translator library tests
-%{?python_provide:%python_provide python%{pyver}-%{library}-tests}
+%{?python_provide:%python_provide python3-%{library}-tests}
 
-Requires:   python%{pyver}-%{library} = %{version}-%{release}
-Requires:   python%{pyver}-hacking
-Requires:   python%{pyver}-fixtures
-Requires:   python%{pyver}-oslotest
-Requires:   python%{pyver}-subunit
-Requires:   python%{pyver}-testrepository
-Requires:   python%{pyver}-testscenarios
-Requires:   python%{pyver}-testtools
-Requires:   python%{pyver}-tosca-parser
+Requires:   python3-%{library} = %{version}-%{release}
+Requires:   python3-hacking
+Requires:   python3-fixtures
+Requires:   python3-oslotest
+Requires:   python3-subunit
+Requires:   python3-testrepository
+Requires:   python3-testscenarios
+Requires:   python3-testtools
+Requires:   python3-tosca-parser
 
-%description -n python%{pyver}-%{library}-tests
+%description -n python3-%{library}-tests
 %{common_desc_tests}
 
 This package contains the Heat Translator test files.
@@ -111,8 +92,8 @@ This package contains the Heat Translator test files.
 %package -n python-%{library}-doc
 Summary:    OpenStack heat-translator library documentation
 
-BuildRequires: python%{pyver}-sphinx
-BuildRequires: python%{pyver}-openstackdocstheme
+BuildRequires: python3-sphinx
+BuildRequires: python3-openstackdocstheme
 
 %description -n python-%{library}-doc
 %{common_desc_tests}
@@ -127,43 +108,41 @@ This package contains the documentation.
 rm -f *requirements.txt
 
 %build
-%{pyver_build}
+%{py3_build}
 
 %if 0%{?with_doc}
 # generate html docs
-sphinx-build-%{pyver} -b html doc/source doc/build/html
-# remove the sphinx-build-%{pyver} leftovers
+sphinx-build -b html doc/source doc/build/html
+# remove the sphinx-build leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %install
-%{pyver_install}
+%{py3_install}
 
 # Create a versioned binary for backwards compatibility until everything is pure py3
-ln -s ./%{executable} %{buildroot}%{_bindir}/%{executable}-%{pyver}
+ln -s ./%{executable} %{buildroot}%{_bindir}/%{executable}-3
 
-%if %{pyver} == 3
-    pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{pyver_sitelib}/%{module}/tests/data/artifacts/
-%endif
+pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{python3_sitelib}/%{module}/tests/data/artifacts/
 
 # Looks like Unit tests depend on sockets
 # need to mock out sockets upstream
 # running %check non-fatally for now
 %check
-export PYTHON=%{pyver_bin}
-%{pyver_bin} setup.py test ||:
+export PYTHON=%{__python3}
+%{__python3} setup.py test ||:
 
-%files -n python%{pyver}-%{library}
+%files -n python3-%{library}
 %license LICENSE
-%{pyver_sitelib}/%{module}
-%{pyver_sitelib}/heat_%{module}-*.egg-info
-%exclude %{pyver_sitelib}/%{module}/tests
+%{python3_sitelib}/%{module}
+%{python3_sitelib}/heat_%{module}-*.egg-info
+%exclude %{python3_sitelib}/%{module}/tests
 %{_bindir}/%{executable}
-%{_bindir}/%{executable}-%{pyver}
+%{_bindir}/%{executable}-3
 
-%files -n python%{pyver}-%{library}-tests
+%files -n python3-%{library}-tests
 %license LICENSE
-%{pyver_sitelib}/%{module}/tests
+%{python3_sitelib}/%{module}/tests
 
 %if 0%{?with_doc}
 %files -n python-%{library}-doc
