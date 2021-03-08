@@ -64,20 +64,17 @@ BuildRequires:  python3-cliff
 
 BuildRequires:  /usr/bin/pathfix.py
 
-Requires:   python3-pbr
-Requires:   python3-babel
-Requires:   python3-cliff
-Requires:   python3-dateutil
-Requires:   python3-six
-Requires:   python3-tosca-parser
+Requires:   python3-pbr >= 2.0.0
+Requires:   python3-cliff >= 2.8.0
+Requires:   python3-dateutil >= 2.5.3
+Requires:   python3-tosca-parser >= 1.6.1
 Requires:   python3-keystoneauth1 >= 3.4.0
 Requires:   python3-novaclient >= 1:9.1.0
 Requires:   python3-heatclient >= 1.10.0
 Requires:   python3-glanceclient >= 1:2.8.0
-Requires:   python3-requests
+Requires:   python3-requests >= 2.18.0
 Requires:   python3-oslo-log >= 3.36.0
-
-Requires:   python3-PyYAML
+Requires:   python3-yaml >= 3.13
 
 %description -n python3-%{library}
 %{common_desc}
