@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x2426b928085a020d8a90d0d879ab7008d0896c8a
+%global sources_gpg_sign 0x01527a34f0d0080f8a5db8d6eb6c5df21b4b6363
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 %global library heat-translator
@@ -17,8 +17,8 @@ can be deployed by Heat.
 
 
 Name:       python-%{library}
-Version:    XXX
-Release:    XXX
+Version:    2.5.0
+Release:    1%{?dist}
 Summary:    OpenStack Heat Translator
 License:    ASL 2.0
 URL:        http://launchpad.net/%{library}/
@@ -165,3 +165,6 @@ export PYTHON=%{__python3}
 %endif
 
 %changelog
+* Wed Mar 16 2022 RDO <dev@lists.rdoproject.org> 2.5.0-1
+- Update to 2.5.0
+
