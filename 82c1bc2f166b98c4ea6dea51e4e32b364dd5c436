@@ -46,6 +46,30 @@
       },
       "revId": "82c1bc2f166b98c4ea6dea51e4e32b364dd5c436",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86035c9a_9ac77506",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-26T11:13:47Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "497070c4_ebb64961",
+      "range": {
+        "startLine": 84,
+        "startChar": 0,
+        "endLine": 94,
+        "endChar": 32
+      },
+      "revId": "82c1bc2f166b98c4ea6dea51e4e32b364dd5c436",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
