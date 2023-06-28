@@ -153,3 +153,4 @@ pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{python3_sitelib}
 %endif
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/heat-translator/commit/703bdbe56fb85e42b2ed36f432ad696acadd162f
