@@ -22,6 +22,30 @@
       },
       "revId": "2abd703b4e5e57a97dd93efb19b6aac6b205c8fb",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "400d7806_36b6b550",
+        "filename": "python-heat-translator.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-28T07:15:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "04dc15bd_6947e4a7",
+      "range": {
+        "startLine": 135,
+        "startChar": 0,
+        "endLine": 135,
+        "endChar": 6
+      },
+      "revId": "2abd703b4e5e57a97dd93efb19b6aac6b205c8fb",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
