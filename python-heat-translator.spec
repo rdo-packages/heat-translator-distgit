@@ -50,8 +50,6 @@ BuildRequires:  python3-devel
 BuildRequires:  pyproject-rpm-macros
 BuildRequires:  git-core
 
-BuildRequires:  /usr/bin/pathfix.py
-
 %description -n python3-%{library}
 %{common_desc}
 
@@ -129,7 +127,7 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 # Create a versioned binary for backwards compatibility until everything is pure py3
 ln -s ./%{executable} %{buildroot}%{_bindir}/%{executable}-3
 
-pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{python3_sitelib}/%{module}/tests/data/artifacts/
+%py3_shebang_fix %{buildroot}%{python3_sitelib}/%{module}/tests/data/artifacts/
 
 %check
 # Unit tests depend on network connection which is not provided in some
