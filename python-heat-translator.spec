@@ -128,3 +128,4 @@ ln -s ./%{executable} %{buildroot}%{_bindir}/%{executable}-3
 %endif
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/heat-translator/commit/fa90abe5b031326d0c47c60c8484251c770fba4b
