@@ -9,6 +9,12 @@
 %global executable heat-translator
 %global with_doc 1
 
+%if %{lua:print(rpm.vercmp(rpm.expand("%{version}"), '3.2.0'));} >= 0
+%global test_directory samples
+%else
+%global test_directory translator
+%endif
+
 %global common_desc \
 OpenStack Heat Translator \
 Heat-Translator is an Openstack command line tool which takes non-Heat \
@@ -127,7 +133,7 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 # Create a versioned binary for backwards compatibility until everything is pure py3
 ln -s ./%{executable} %{buildroot}%{_bindir}/%{executable}-3
 
-%py3_shebang_fix %{buildroot}%{python3_sitelib}/%{module}/tests/data/artifacts/
+%py3_shebang_fix %{buildroot}%{python3_sitelib}/%{test_directory}/tests/data/artifacts/
 
 %check
 # Unit tests depend on network connection which is not provided in some
@@ -139,13 +145,13 @@ ln -s ./%{executable} %{buildroot}%{_bindir}/%{executable}-3
 %license LICENSE
 %{python3_sitelib}/%{module}
 %{python3_sitelib}/heat_%{module}-*.dist-info
-%exclude %{python3_sitelib}/%{module}/tests
+%exclude %{python3_sitelib}/%{test_directory}/tests
 %{_bindir}/%{executable}
 %{_bindir}/%{executable}-3
 
 %files -n python3-%{library}-tests
 %license LICENSE
-%{python3_sitelib}/%{module}/tests
+%{python3_sitelib}/%{test_directory}/tests
 
 %if 0%{?with_doc}
 %files -n python-%{library}-doc
