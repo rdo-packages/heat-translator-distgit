@@ -53,25 +53,6 @@ BuildRequires:  git-core
 %description -n python3-%{library}
 %{common_desc}
 
-%package -n python3-%{library}-tests
-Summary:    OpenStack heat-translator library tests
-%{?python_provide:%python_provide python3-%{library}-tests}
-
-Requires:   python3-%{library} = %{version}-%{release}
-Requires:   python3-hacking
-Requires:   python3-fixtures
-Requires:   python3-oslotest
-Requires:   python3-subunit
-Requires:   python3-testrepository
-Requires:   python3-testscenarios
-Requires:   python3-testtools
-Requires:   python3-tosca-parser
-
-%description -n python3-%{library}-tests
-%{common_desc_tests}
-
-This package contains the Heat Translator test files.
-
 %if 0%{?with_doc}
 %package -n python-%{library}-doc
 Summary:    OpenStack heat-translator library documentation
@@ -127,8 +108,6 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 # Create a versioned binary for backwards compatibility until everything is pure py3
 ln -s ./%{executable} %{buildroot}%{_bindir}/%{executable}-3
 
-%py3_shebang_fix %{buildroot}%{python3_sitelib}/%{module}/tests/data/artifacts/
-
 %check
 # Unit tests depend on network connection which is not provided in some
 # package build environments.
@@ -139,13 +118,8 @@ ln -s ./%{executable} %{buildroot}%{_bindir}/%{executable}-3
 %license LICENSE
 %{python3_sitelib}/%{module}
 %{python3_sitelib}/heat_%{module}-*.dist-info
-%exclude %{python3_sitelib}/%{module}/tests
 %{_bindir}/%{executable}
 %{_bindir}/%{executable}-3
-
-%files -n python3-%{library}-tests
-%license LICENSE
-%{python3_sitelib}/%{module}/tests
 
 %if 0%{?with_doc}
 %files -n python-%{library}-doc
