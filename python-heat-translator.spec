@@ -19,8 +19,8 @@ can be deployed by Heat.
 
 
 Name:       python-%{library}
-Version:    XXX
-Release:    XXX
+Version:    3.2.0
+Release:    1%{?dist}
 Summary:    OpenStack Heat Translator
 License:    Apache-2.0
 URL:        http://launchpad.net/%{library}/
@@ -128,3 +128,6 @@ ln -s ./%{executable} %{buildroot}%{_bindir}/%{executable}-3
 %endif
 
 %changelog
+* Tue Mar 18 2025 RDO <dev@lists.rdoproject.org> 3.2.0-1
+- Update to 3.2.0
+
